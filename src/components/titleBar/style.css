@@ -1,0 +1,10 @@
+nav {
+    -webkit-app-region: drag;
+}
+nav div {
+    -webkit-app-region: no-drag;
+}
+
+#close {
+    font-family: cursive;
+}
