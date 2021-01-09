@@ -5,6 +5,8 @@ function createWindow () {
     backgroundColor: '#1b56cc',
     width: 800,
     height: 600,
+    minWidth: 600,
+    minHeight: 500,
     frame: false,
     webPreferences: {
         nodeIntegration: true,
@@ -12,7 +14,7 @@ function createWindow () {
     }
   });
 
-  // mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
 
   mainWindow.loadURL('http://localhost:3000');
 
