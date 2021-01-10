@@ -1,7 +1,7 @@
-nav {
+header {
     -webkit-app-region: drag;
 }
-nav div {
+header div {
     -webkit-app-region: no-drag;
 }
 

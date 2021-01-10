@@ -4,11 +4,15 @@ module.exports = {
   theme: {
     extend: {
       borderWidth: {
-        '3': '3px'
+        '2.5': '2.5px'
       },
 
       lineHeight: {
-        centered: '0.45'
+        centered: '0.6'
+      },
+
+      spacing: {
+        '2.5': '0.67rem'
       }
     },
   },
