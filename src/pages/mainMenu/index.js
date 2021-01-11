@@ -3,13 +3,11 @@ import React, { useEffect } from 'react';
 import './style.css';
 import 'animate.css';
 
-function MainMenu() {
+function MainMenu(props) {
+    const { loaded } = props;
+
     useEffect(() => {
-        let loaded = sessionStorage.getItem('loaded');
-
-        if (loaded === null) {
-            sessionStorage.setItem('loaded', true);
-
+        if (!loaded) {
             setTimeout(() => {
                 const btnGroup = document.getElementById('btnGroup');
     
@@ -42,6 +40,8 @@ function MainMenu() {
 
             menu.classList.add('animate__animated', 'animate__zoomIn');
         }
+
+        // eslint-disable-next-line
     }, []);
 
     function click() {
