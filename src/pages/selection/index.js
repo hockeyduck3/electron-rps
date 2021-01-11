@@ -5,11 +5,11 @@ import 'animate.css';
 
 function Selection() {
     function back() {
-        const game = document.getElementById('game');
+        const selection = document.getElementById('selection');
 
-        game.classList.replace('animate__zoomIn', 'animate__zoomOut');
+        selection.classList.replace('animate__zoomIn', 'animate__zoomOut');
 
-        game.addEventListener('animationend', () => {
+        selection.addEventListener('animationend', () => {
             window.location.hash = '/';
         });
     }
