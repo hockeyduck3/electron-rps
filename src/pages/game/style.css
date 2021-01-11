@@ -15,3 +15,59 @@
     opacity: 1;
     transition: ease-in 0.2s;
 }
+
+#choose {
+    font-family: 'Hanalei Fill', cursive;
+    font-weight: 400;
+    text-shadow: 0px 2px rgb(116, 116, 116);
+    -webkit-text-stroke: 1px rgb(65, 65, 65);
+}
+
+#your {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 800;
+    text-shadow: 0px 2px black;
+}
+
+#weapon {
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 0px 2px rgb(192, 192, 192);
+    -webkit-text-stroke: 1px white;
+}
+
+.rockBtn {
+    /* padding-top: 15px; */
+    padding-right: 10px;
+    transition: linear 0.2s;
+}
+
+.rockBtn:hover {
+    border: 5px solid white;
+    box-shadow: 0px 3px 8px -4px black;
+    transform: scale(1.05);
+    transition: linear 0.2s;
+}
+
+.paperBtn {
+    padding: 25px 15px 20px 25px;
+    transition: linear 0.2s;
+}
+
+.paperBtn:hover {
+    border: 5px solid white;
+    box-shadow: 0px 3px 8px -4px black;
+    transform: scale(1.05);
+    transition: linear 0.2s;
+}
+
+.scissorsBtn {
+    padding: 10px;
+    transition: linear 0.2s;
+}
+
+.scissorsBtn:hover {
+    border: 5px solid white;
+    box-shadow: 0px 3px 8px -4px black;
+    transform: scale(1.05);
+    transition: linear 0.2s;
+}
