@@ -7,10 +7,10 @@ import MainMenu from './pages/mainMenu/index';
 function App() {
   return (
     <HashRouter>
-        <TitleBar />
-        <Switch>
-          <Route component={MainMenu} />
-        </Switch>
+      <TitleBar />
+      <Switch>
+        <Route component={MainMenu} />
+      </Switch>
     </HashRouter>
   );
 }
