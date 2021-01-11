@@ -3,10 +3,10 @@ const { app, BrowserWindow } = require('electron');
 function createWindow () {
   const mainWindow = new BrowserWindow({
     backgroundColor: '#1b56cc',
-    width: 800,
-    height: 600,
-    minWidth: 600,
-    minHeight: 500,
+    width: 860,
+    height: 650,
+    minWidth: 860,
+    minHeight: 650,
     frame: false,
     webPreferences: {
         nodeIntegration: true,

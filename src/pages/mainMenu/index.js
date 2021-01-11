@@ -14,7 +14,7 @@ function MainMenu() {
 
     return (
         <div>
-            <div id='titleGroup' className='animate__animated animate__bounceIn animate__delay-3s grid grid-rows-1 grid-flow-row grid-cols-3 mt-10'>
+            <div id='titleGroup' className='animate__animated animate__bounceIn animate__delay-3s grid grid-rows-1 grid-flow-row grid-cols-3 mt-14'>
                 <h1 id='rock' className=' text-gray-300 text-7xl mt-2'>Rock</h1>
                 <h1 id='paper' className='text-white text-7xl text-center mt-2'>Paper</h1>
                 <h1 id='scissors' className='text-red-600 text-6xl text-center mt-2'>Scissors</h1>

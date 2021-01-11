@@ -8,7 +8,7 @@ module.exports = {
       },
 
       lineHeight: {
-        centered: '0.6'
+        centered: '0.5'
       },
 
       spacing: {
