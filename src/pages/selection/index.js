@@ -17,30 +17,17 @@ function Selection() {
     function select(token) {
         const playerChoice = token;
 
-        const compArr = ['R', 'P', 'S'];
+        const selection = document.getElementById('selection');
 
-        const compChoice = compArr[Math.floor(Math.random() * 3)];
+        selection.classList.replace('animate__zoomIn', 'animate__zoomOut');
 
-        let testGameMessage;
-
-        if (playerChoice === compChoice) {
-            testGameMessage = 'You Tied with the Computer!';
-        }
-
-        // eslint-disable-next-line
-        else if (playerChoice === 'R' && compChoice === 'S' || playerChoice === 'P' && compChoice === 'R' || playerChoice === 'S' && compChoice === 'P') {
-            testGameMessage = 'You Win!';
-        }
-
-        else {
-            testGameMessage = 'You lose...';
-        }
-
-        console.log(`Player: ${playerChoice}, Computer: ${compChoice}. ${testGameMessage}`);
+        selection.addEventListener('animationend', () => {
+            window.location.hash = `/game/${playerChoice}`;
+        });
     }
 
     return (
-        <div id='game' className='animate__animated animate__zoomIn'>
+        <div id='selection' className='animate__animated animate__zoomIn'>
             <p id='backBtn' className='animate__animated cursor-pointer text-white text-2xl text-center mt-5 ml-4' onClick={back}>Main Menu</p>
             
             <div id='chooseWeapon' className='animate__animated'>
