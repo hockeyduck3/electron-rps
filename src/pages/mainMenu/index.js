@@ -58,7 +58,7 @@ function MainMenu() {
         <div id='menu'>
             <div className='grid grid-rows-1 grid-flow-row grid-cols-3 mt-14 gap-10'>
                 <div>
-                    <h1 id='rock' className='animate__animated animate__bounceIn animate__delay-3s text-gray-300 text-6xl text-center mt-2 mb-12'>Rock</h1>
+                    <h1 id='rock' className='animate__animated animate__bounceIn animate__delay-3s text-gray-100 text-6xl text-center mt-2 mb-12'>Rock</h1>
                     <img id='rockImg' src='../../img/rock.png' alt='Rock' className='animate__animated animate__bounceInDown mx-auto w-10/12' draggable='false'/>
                 </div>
 

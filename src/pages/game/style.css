@@ -1,0 +1,17 @@
+#backBtn {
+    background: radial-gradient(circle, rgba(241, 215, 64, 0.92) 0%, rgba(204, 127, 27, 0.92) 100%);
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 3px 8px -4px black;
+    font-family: 'Bangers', cursive;
+    text-shadow: 0px 2px black;
+    transition: ease-out 0.2s;
+    opacity: 0.9;
+    height: 40px;
+    width: 125px;
+}
+
+#backBtn:hover {
+    opacity: 1;
+    transition: ease-in 0.2s;
+}
