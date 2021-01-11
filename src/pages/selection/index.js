@@ -3,7 +3,7 @@ import React from 'react';
 import './style.css';
 import 'animate.css';
 
-function Game() {
+function Selection() {
     function back() {
         const game = document.getElementById('game');
 
@@ -62,4 +62,4 @@ function Game() {
     )
 }
 
-export default Game;
+export default Selection;

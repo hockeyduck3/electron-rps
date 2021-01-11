@@ -50,7 +50,7 @@ function MainMenu() {
         menu.classList.add('animate__animated', 'animate__zoomOut');
 
         menu.addEventListener('animationend', () => {
-            window.location.hash = '/game';
+            window.location.hash = '/selection';
         });
     }
 
