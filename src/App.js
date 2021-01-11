@@ -1,17 +1,17 @@
 import React from 'react';
-import { HashRouter as Router } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 
 import TitleBar from './components/titleBar/index';
 import MainMenu from './pages/mainMenu/index';
 
 function App() {
   return (
-    <Router>
-      <div>
+    <HashRouter>
         <TitleBar />
-        <MainMenu />
-      </div>
-    </Router>
+        <Switch>
+          <Route component={MainMenu} />
+        </Switch>
+    </HashRouter>
   );
 }
 
