@@ -29,3 +29,22 @@
     text-shadow: 0px 2px rgb(192, 192, 192);
     -webkit-text-stroke: 1px white;
 }
+
+#btnGroup {
+    background: radial-gradient(circle, rgb(241, 215, 64) 0%, rgb(204, 127, 27) 100%);
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 3px 8px -4px black;
+    cursor: pointer;
+    font-family: 'Bangers', cursive;
+    text-shadow: 0px 2px black;
+    transition: ease-out 0.2s;
+    height: 80px;
+    width: 180px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+#btnGroup:hover {
+    transform: scale(1.06);
+    transition: ease-in 0.2s;
+}

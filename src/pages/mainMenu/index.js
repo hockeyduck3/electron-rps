@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import './style.css';
 import 'animate.css';
 
 function MainMenu() {
+    useEffect(() => {
+        setTimeout(() => {
+            const btnGroup = document.getElementById('btnGroup');
+
+            btnGroup.classList.remove('animate__bounceIn', 'animate__delay-3s');
+        }, 4000);
+    }, []);
+
     return (
         <div>
             <div id='titleGroup' className='animate__animated animate__bounceIn animate__delay-3s grid grid-rows-1 grid-flow-row grid-cols-3 mt-10'>
@@ -12,10 +20,14 @@ function MainMenu() {
                 <h1 id='scissors' className='text-red-600 text-6xl text-center mt-2'>Scissors</h1>
             </div>
 
-            <div className='grid grid-rows-1 grid-flow-row grid-cols-3 mt-20 gap-10'>
+            <div className='grid grid-rows-1 grid-flow-row grid-cols-3 mt-14 gap-10'>
                 <img src='../../img/rock.png' alt='Rock' className='animate__animated animate__bounceInDown mx-auto w-10/12'/>
                 <img src='../../img/paper.png' alt='Paper' className='animate__animated animate__bounceInDown animate__delay-1s mx-auto w-8/12'/>
                 <img src='../../img/scissors.png' alt='Scissors' className='animate__animated animate__bounceInDown animate__delay-2s mx-auto w-8/12 align-top'/>
+            </div>
+
+            <div id='btnGroup' className='animate__animated animate__bounceIn animate__delay-3s mx-auto mt-16'>
+                <p id='playBtn' className=' text-white text-6xl text-center mt-2'>Play</p>
             </div>
         </div>
     )
