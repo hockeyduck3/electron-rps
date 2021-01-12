@@ -99,7 +99,53 @@ function Game() {
 
         setTimeout(() => {
             ready.classList.replace('animate__jackInTheBox', 'animate__zoomOut');
-        }, 1000);
+
+            setTimeout(() => {
+                results(userChoice, compChoice);
+            }, 1000);
+        }, 600);
+    }
+
+    function results(userRes, compRes) {    
+        const ready = document.getElementById('ready');
+
+        const user = document.getElementById('you');
+        const comp = document.getElementById('compTitle');
+
+        let resMessage;
+
+        if (userRes === compRes) {
+            resMessage = 'You Tied. 😕';
+        }
+
+        // eslint-disable-next-line
+        else if (userRes === 'R' && compRes === 'S' || userRes === 'P' && compRes === 'R' || userRes === 'S' && compRes === 'P') {
+            resMessage = 'You Won! 😁';
+            user.innerText = '👑';
+            comp.innerText = '👎';
+
+            user.classList.remove('animate__delay-3s');
+            comp.classList.remove('animate__delay-3s');
+
+            user.classList.replace('animate__fadeOut', 'animate__fadeIn');
+            comp.classList.replace('animate__fadeOut', 'animate__fadeIn');
+        }
+
+        else {
+            resMessage = 'You Lost 😭';
+            comp.innerText = '👑';
+            user.innerText = '👎';
+
+            user.classList.remove('animate__delay-3s');
+            comp.classList.remove('animate__delay-3s');
+
+            user.classList.replace('animate__fadeOut', 'animate__fadeIn');
+            comp.classList.replace('animate__fadeOut', 'animate__fadeIn');
+        }
+
+        ready.innerText = resMessage;
+
+        ready.classList.replace('animate__zoomOut', 'animate__zoomIn');
     }
 
     function back() {
@@ -108,7 +154,7 @@ function Game() {
 
     return (
         <div id='game'>
-            <h1 id='ready' className='animate__animated animate__zoomIn animate__delay-4s text-white text-8xl text-center mt-11'>Ready</h1>
+            <h1 id='ready' className='animate__animated animate__zoomIn animate__delay-4s text-white text-8xl text-center mt-11 mb-11'>Ready!</h1>
 
             <div id='gameGrid' className='grid grid-rows-1 grid-flow-row grid-cols-3'>
                 <div id='user' className='animate__animated animate__fadeInLeft'>
