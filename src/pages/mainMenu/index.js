@@ -74,7 +74,7 @@ function MainMenu(props) {
             </div>
 
             <div id='btnGroup' className='animate__animated animate__bounceIn animate__delay-3s mx-auto mt-16'>
-                <p sid='playBtn' className=' text-white text-6xl text-center mt-2' onClick={click}>Play</p>
+                <p id='playBtn' className=' text-white text-6xl text-center mt-2' onClick={click}>Play</p>
             </div>
         </div>
     )
